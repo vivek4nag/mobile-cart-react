@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Card = ({ name, price, img, count, index, dataArr, setDataArr, cartCount, setCartCount, totalPrice, setTotalPrice }) => {
+const MobileCard = ({ name, price, img, count, index, dataArr, setDataArr, cartCount, setCartCount, totalPrice, setTotalPrice }) => {
 
     const increaseCount = (index) => {
         const newDataArr = [...dataArr]
@@ -76,4 +76,4 @@ const Card = ({ name, price, img, count, index, dataArr, setDataArr, cartCount, 
     );
 };
 
-export default Card;
+export default MobileCard;

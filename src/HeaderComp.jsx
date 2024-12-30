@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-const Header = ({ mobCount }) => {
+const HeaderComp = ({ mobCount }) => {
     return (
         <div className="flex items-center justify-between w-full bg-blue-600 text-white py-4 px-6 shadow-md">
             <h1 className="text-2xl font-bold">Your Jhola</h1>
@@ -14,4 +14,4 @@ const Header = ({ mobCount }) => {
     )
 }
 
-export default Header
+export default HeaderComp

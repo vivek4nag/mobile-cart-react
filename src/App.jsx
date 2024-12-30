@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Header from "./Header";
+import HeaderComp from "./HeaderComp";
 import Data from "./utils/Constant";
-import Card from "./card";
+import MobileCard from "./MobileCard";
 import KhaliDabba from "./KhaliDabba";
 
 function App() {
@@ -18,14 +18,14 @@ function App() {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <Header mobCount={cartCount} />
+      <HeaderComp mobCount={cartCount} />
 
       {dataArr.length === 0 ? (
         <KhaliDabba />
       ) : (
         <div className="flex flex-col w-[800px] gap-8 pt-10">
           {dataArr.map((ele, idx) => (
-            <Card
+            <MobileCard
               key={idx}
               {...ele}
               index={idx}
